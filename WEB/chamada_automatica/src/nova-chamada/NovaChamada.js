@@ -26,7 +26,7 @@ export default function NovaChamada() {
                     </div>
                 </div>
             </header>
-            <body>
+            <article>
                 <div className="container">
                     <section className="info">
                         <p>Use a câmera do celular para ler o QR code e garantir sua presença na aula</p>
@@ -35,7 +35,7 @@ export default function NovaChamada() {
                         < QrCode />
                     </section>
                 </div>
-            </body>
+            </article>
             <footer>
                 <p id="tituloFooter">Chamada Automática</p>
                 <p className="descricao">Este projeto tem como foco otimizar o tempo de aula por meio de uma chamada mais rápida para que a quantidade de alunos não interfira no tempo para ela ser feita. Dessa forma é possível ter uma aula mais produtiva.</p>
