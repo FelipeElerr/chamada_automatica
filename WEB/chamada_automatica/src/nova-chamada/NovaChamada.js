@@ -1,17 +1,27 @@
 import './NovaChamada.css';
-import { AiOutlineUser } from "react-icons/ai"
+import QrCode from './qr-code/QrCode';
+
+import { AiOutlineUser, AiOutlineSolution } from "react-icons/ai"
+
+
 export default function NovaChamada() {
     return (
         <>
             <header>
-                <div className="titulo">
-                    <p >Chamada Automática</p>
+                <div id="cabecalho">
+                    <div className="titulo">
+                        <p >Chamada Automática</p>
+                    </div>
+                    <div id="iconeLista">
+                        <AiOutlineSolution />
+                    </div>
                 </div>
+
                 <div className="menu">
-                    <div className="ra">
+                    <div id="ra">
                         <p >200738</p>
                     </div>
-                    <div class="iconeUsuario">
+                    <div id="iconeUsuario">
                         <AiOutlineUser />
                     </div>
                 </div>
@@ -19,10 +29,10 @@ export default function NovaChamada() {
             <body>
                 <div className="container">
                     <section className="info">
-                        <p>Use a câmera do celular para ler o QR code e conseguir sua presença na aula</p>
+                        <p>Use a câmera do celular para ler o QR code e garantir sua presença na aula</p>
                     </section>
                     <section className="qrCode">
-                        <p>LER QR CODE</p>
+                        < QrCode />
                     </section>
                 </div>
             </body>
