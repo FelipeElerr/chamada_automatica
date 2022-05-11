@@ -37,7 +37,7 @@ export default function NovaChamada() {
                 </div>
             </body>
             <footer>
-                <p id >Chamada Automática</p>
+                <p id="tituloFooter">Chamada Automática</p>
                 <p className="descricao">Este projeto tem como foco otimizar o tempo de aula por meio de uma chamada mais rápida para que a quantidade de alunos não interfira no tempo para ela ser feita. Dessa forma é possível ter uma aula mais produtiva.</p>
                 <p>Engenharia de computação UPX5</p>
                 <p>&copy; all rights reserved 2022</p>
