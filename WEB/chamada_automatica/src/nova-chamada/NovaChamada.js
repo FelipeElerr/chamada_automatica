@@ -23,32 +23,34 @@ export default function NovaChamada() {
 					</div>
 				</div>
 
-				<div className="menu">
-					<div id="ra">
-						<p >200738</p>
-					</div>
-					<div id="iconeUsuario">
-						<AiOutlineUser />
-					</div>
-				</div>
-			</header>
-			<body>
-				<div className="container">
-					<section className="info">
-						<p>Use a câmera do celular para ler o QR code e garantir sua presença na aula</p>
-					</section>
-					<section className="qrCode">
-						<QrCode />
-					</section>
-					<button onClick={chamaAPI}>Teste API</button>
-				</div>
-			</body>
-			<footer>
-				<p id >Chamada Automática</p>
-				<p className="descricao">Este projeto tem como foco otimizar o tempo de aula por meio de uma chamada mais rápida para que a quantidade de alunos não interfira no tempo para ela ser feita. Dessa forma é possível ter uma aula mais produtiva.</p>
-				<p>Engenharia de computação UPX5</p>
-				<p>&copy; all rights reserved 2022</p>
-			</footer>
-		</>
-	)
+						<div className="menu">
+								<div id="ra">
+										<p >200738</p>
+								</div>
+								<div id="iconeUsuario">
+										<AiOutlineUser />
+								</div>
+						</div>
+            </header>
+            <article>
+                <div className="container">
+                    <section className="info">
+                        <p>Use a câmera do celular para ler o QR code e garantir sua presença na aula</p>
+                    </section>
+                    <section className="qrCode">
+                        <QrCode />
+                    </section>
+										<button onClick={chamaAPI}>Teste API</button>
+                </div>
+            </article>
+            <footer>
+                <p id="tituloFooter">Chamada Automática</p>
+                <p className="descricao">Este projeto tem como foco otimizar o tempo de aula por meio de uma chamada mais rápida para que a quantidade de alunos não interfira no tempo para ela ser feita. Dessa forma é possível ter uma aula mais produtiva.</p>
+                <p>Engenharia de computação UPX5</p>
+                <p>&copy; all rights reserved 2022</p>
+            </footer>
+        </>
+
+
+    )
 }
