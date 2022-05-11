@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { QRCode } from 'react-qrcode-logo';
+import * as React from 'react'
+
+const url = "https://api.hashify.net/hash/sha256/hex?value="
+const code = "CP500TIN2-03052022-1900"
 
 function App() {
+  const [hash, setHash] = React.useState(); 
+
+  const funcaoAssync = async () => {
+    const string = url.concat(code)
+    const resultado = await fetch(string);
+    const json = await resultado.json();
+
+    //JSON.parse(document.getElementById("a").innerHTML).Digest
+    setHash(json.Digest)
+	};
+  React.useEffect(() => { funcaoAssync(); }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QRCode value={hash}/>
     </div>
   );
 }
