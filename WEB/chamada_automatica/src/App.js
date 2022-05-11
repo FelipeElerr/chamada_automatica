@@ -4,7 +4,6 @@ import * as React from 'react'
 
 const url = "https://api.hashify.net/hash/sha256/hex?value="
 const code = "CP500TIN2-03052022-1900"
-var hashed = "1"
 
 function App() {
   const [hash, setHash] = React.useState(); 
