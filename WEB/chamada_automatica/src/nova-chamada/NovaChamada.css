@@ -73,6 +73,7 @@ article {
 .info {
 	margin-top: 8em;
 	font-weight: bold;
+	font-family: "Imprima-Regular";
 }
 
 .qrCode {
@@ -103,4 +104,20 @@ footer {
 	font-family: 'Indie Flower', cursive;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Inconsolata-Regular";
+	src: url("/Fonts/Inconsolata-Regular.ttf");
+}
+@font-face {
+	font-family: "Imprima-Regular";
+	src: url("/Fonts/Imprima-Regular.ttf");
+}
+#rights{
+	font-family: "Inconsolata-Regular",'Orbitron', sans-serif;
+}
+img{
+
+	max-width: 50%;
+
 }

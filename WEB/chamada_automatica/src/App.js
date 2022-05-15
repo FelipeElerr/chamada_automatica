@@ -1,5 +1,5 @@
 import './App.css';
-import NovaChamada from './nova-chamada/NovaChamada';
+import NovaChamada from './nova-chamada/Ler_qrcode';
 import * as React from 'react'
 
 function App() {

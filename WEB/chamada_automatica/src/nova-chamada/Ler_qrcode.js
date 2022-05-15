@@ -2,6 +2,7 @@ import './NovaChamada.css';
 import QrCode from './qr-code/QrCode';
 import { AiOutlineUser, AiOutlineSolution } from "react-icons/ai"
 import * as React from 'react'
+import lerqrcode from './Img/qr-code-scan.png'
 
 export default function NovaChamada() {
 	const chamaAPI = async () => {
@@ -37,10 +38,10 @@ export default function NovaChamada() {
                     <section className="info">
                         <p>Use a câmera do celular para ler o QR code e garantir sua presença na aula</p>
                     </section>
-                    <section className="qrCode">
-                        <QrCode />
+                    <section id='img'>
+					<img src={lerqrcode }/>
                     </section>
-										<button onClick={chamaAPI}>Teste API</button>
+					<button >Ler QR code</button>
                 </div>
             </article>
             <footer>
