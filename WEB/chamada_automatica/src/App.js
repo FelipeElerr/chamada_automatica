@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <NovaChamada /> 
-      <div> uahauhauh </div> 
     </div>
   );
 }
