@@ -71,12 +71,12 @@ article {
 }
 
 .info {
-	margin-top: 8em;
+	margin-top: 2em;
 	font-weight: bold;
 }
 
 .qrCode {
-	margin-top: 8em;
+	margin-top: 2em;
 	background-color: #c9eded;
 	width: max-content;
 	padding: 5px;

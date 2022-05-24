@@ -1,5 +1,5 @@
-import './NovaChamada.css';
-import QrCode from './qr-code/QrCode';
+import QrCode from "./QrCode/qr-code";
+import './nova-chamada.css';
 import { AiOutlineUser, AiOutlineSolution } from "react-icons/ai"
 import * as React from 'react'
 
