@@ -1,11 +1,11 @@
-import './App.css';
-import NovaChamada from './nova-chamada/NovaChamada';
 import * as React from 'react'
+import { Route } from 'react-router-dom';
+import Router from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <NovaChamada />  
+    <div>
+       <Router />
     </div>
   );
 }
