@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from "./pages/Main/main";
 import NovaChamada from "./pages/NovaChamada/nova-chamada";
 
+
 function Router() {
     return (
         <BrowserRouter>
