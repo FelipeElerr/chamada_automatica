@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './main.css'
-import Header from '../../componentes/Header/header'
-import Footer from '../../componentes/Footer/footer'
+import Header from '../../../componentes/Header/header'
+import Footer from '../../../componentes/Footer/footer'
 
 
 function Main() {
-    // const trocarPagina = values =>{
-    //     history.goForward('/nova-chamada')
-    // }
     return (
         <>
             <Header />

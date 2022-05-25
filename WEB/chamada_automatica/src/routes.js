@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Main from "./pages/Main/main";
-import NovaChamada from "./pages/NovaChamada/nova-chamada";
+import Main from "./pages/NovaChamada/IniciarChamada/main";
+import NovaChamada from "./pages/NovaChamada/QrCode/nova-chamada";
 
 
 function Router() {
