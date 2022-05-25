@@ -19,12 +19,12 @@
 }
 /* ------------------------------------------------------ */
 .sala{
-    margin-top:3em;
+    margin-top:1em;
     margin-left: 10em;
 }
 .listaAlunos{
     margin-left:20em;
-    margin-top:8em;
+    margin-top:2em;
 }
  
 ul{
@@ -32,12 +32,12 @@ ul{
 }
 
 li{
-    margin-top:1em;
+    margin-top:0.5em;
 }
 
 .gerarQrCode {
-    margin-left: 40em;
-    margin-top: 35em;
+    margin-left: 20em;
+    margin-top: 15em;
     
 }
 
