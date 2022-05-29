@@ -2,7 +2,6 @@ import './NovaChamada.css';
 import QrCode from './qr-code/QrCode';
 import { AiOutlineUser, AiOutlineSolution } from "react-icons/ai"
 import * as React from 'react'
-import NomesCheckBox from './NomesCheckBox';
 
 export default function NovaChamada() {
 	const chamaAPI = async () => {
@@ -36,12 +35,12 @@ export default function NovaChamada() {
             <article>
                 <div className="container">
                     <section className="info">
-                        <h1>UP013TIN1</h1>
+                        <p> a câmera do celular para ler o QR code e garantir sua presença na aula</p>
                     </section>
                     <section className="qrCode">
-                        <NomesCheckBox/>
+                        
                     </section>
-										<button >Finalizar</button>
+										<button onClick={chamaAPI}>Teste API</button>
                 </div>
             </article>
             <footer>
