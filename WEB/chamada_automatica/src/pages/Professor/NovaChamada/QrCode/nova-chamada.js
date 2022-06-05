@@ -1,8 +1,8 @@
 import QrCode from "./qr-code";
 import './nova-chamada.css';
 import * as React from 'react'
-import Header from '../../../componentes/Header/header'
-import Footer from '../../../componentes/Footer/footer'
+import Header from '../../../../componentes/Header/header'
+import Footer from '../../../../componentes/Footer/footer'
 
 export default function NovaChamada() {
 

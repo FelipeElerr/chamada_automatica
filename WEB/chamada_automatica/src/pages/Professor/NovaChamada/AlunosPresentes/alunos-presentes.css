@@ -17,6 +17,9 @@
     display: flex;
     flex-direction: row;
 }
+#checkbox{
+    margin-right: 1.5em;
+}
 /* ------------------------------------------------------ */
 .sala{
     position: absolute;
@@ -42,6 +45,14 @@ li{
     right: 8em;
     bottom: 13em;
 }
+
+.calcular {
+    position: absolute;
+    right: 12em;
+    bottom: 13em;
+}
+
+
 
 .Link {
     text-decoration: none;
