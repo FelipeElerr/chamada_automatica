@@ -41,7 +41,7 @@ function Main() {
                 </section>
 
                 <section className="gerarQrCode">
-                    <Link to="/nova-chamada" className="Link" id="formatacao">Gerar Qr Code</Link>
+                    <Link to="/alunos-presentes" className="Link" id="formatacao">Gerar Qr Code</Link>
                 </section>
 
             </article>
