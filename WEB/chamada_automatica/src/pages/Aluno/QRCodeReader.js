@@ -3,11 +3,11 @@ import React from "react";
 import axios from 'axios'
 
 //const url = 'http://localhost:3080'
-const url = 'https://6cd5-2804-18-185c-ff00-41e-6878-a537-6bb8.sa.ngrok.io'
+const url = 'https://72cc-2804-90-5000-5a4e-1d0-2f5c-bb64-babe.sa.ngrok.io'
 
 function QRCodeReader() {
   function callApi(ra, decodedText){
-    axios.post(`${url}/cadastraaluno`,{
+    axios.put(`${url}/alunos/presenca`,{
       	"ra": ra,
       	"qrcode": decodedText
       })
@@ -15,25 +15,38 @@ function QRCodeReader() {
       //window.alert("foi")
     })
   }
-  // function testeGET(){
-  //   axios.get(`${url}/`)
-  //   .then((response)=>{
-  //     console.log(response)
-  //   })
-  // }
-  // function testePOST(){
-  //   let email = document.getElementById("email").value
-  //   var array = email.split("@")
-  //   let ra = array[0]
+  function testeGET(){
+    axios.get(`${url}/`)
+    .then((response)=>{
+      console.log(response)
+    })
+  }
+  function testePOST(){
+    let email = document.getElementById("email").value
+    var array = email.split("@")
+    let ra = array[0]
 
-  //   axios.post(`${url}/cadastraaluno`,{
-  //     	"ra": ra,
-  //     	"qrcode": "decodedText"
-  //     })
-  //   .then((response)=>{
-  //     console.log(response)
-  //   })
-  // }
+    axios.post(`${url}/alunos/presenca`,{
+      	"ra": ra,
+      	"qrcode": "decodedText"
+      })
+    .then((response)=>{
+      console.log(response)
+    })
+  }
+  function testePUT(){
+    let email = document.getElementById("email").value
+    var array = email.split("@")
+    let ra = array[0]
+
+    axios.put(`${url}/alunos/presenca`,{
+      	"ra": ra,
+      	"qrcode": "decodedText"
+      })
+    .then((response)=>{
+      console.log(response)
+    })
+  }
 	function scan(){
 		Html5Qrcode.getCameras().then(devices => {
 			var cameraId = 0
@@ -81,8 +94,9 @@ function QRCodeReader() {
   return (
     <div style={{width: "500px", border: "white 2px"}} id="reader">
 			<button onClick={scan}>Escanear QRCode</button>
-      {/* <button onClick={testeGET}>Testar GET</button> */}
-      {/* <button onClick={testePOST}>Testar POST</button> */}
+      <button onClick={testeGET}>Testar GET</button>
+      <button onClick={testePOST}>Testar POST</button>
+      <button onClick={testePUT}>Testar PUT</button>
 		</div>
   );
 }
