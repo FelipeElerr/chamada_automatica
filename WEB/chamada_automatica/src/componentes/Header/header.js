@@ -16,9 +16,6 @@ export default function Header(){
                 </div>
 
                 <div className="menu">
-                    <div id="ra">
-                        <p >200738</p>
-                    </div>
                     <div id="iconeUsuario">
                         <AiOutlineUser />
                     </div>
