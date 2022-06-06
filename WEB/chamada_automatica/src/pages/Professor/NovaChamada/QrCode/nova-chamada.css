@@ -29,3 +29,25 @@ article {
 	border-radius: 10px;
 }
 
+.gerarQrCode {
+    position: absolute;
+    right: 8em;
+    bottom: 13em;
+}
+
+#formatacao{
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.Link {
+    text-decoration: none;
+    background-color: #c9eded;
+    padding: 5px;
+    border-radius: 10px;
+    
+}

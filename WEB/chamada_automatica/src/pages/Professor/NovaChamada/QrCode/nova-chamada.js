@@ -3,8 +3,9 @@ import './nova-chamada.css';
 import * as React from 'react'
 import Header from '../../../../componentes/Header/header'
 import Footer from '../../../../componentes/Footer/footer'
+import { Link } from "react-router-dom";
 
-export default function NovaChamada() {
+export default function ConferenciaAlunos() {
 
 	return (
 		<>
@@ -16,6 +17,9 @@ export default function NovaChamada() {
                     </section>
                     <section className="qrCode">
                         <QrCode />
+                    </section>
+                    <section className="gerarQrCode">
+                        <Link to="/alunos-presentes" className="Link" id="formatacao">Finalizar</Link>
                     </section>
                 </div>
             </article>
