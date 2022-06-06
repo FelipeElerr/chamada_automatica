@@ -26,7 +26,7 @@ export default function Update() {
 
 	return (
 		<>
-		<div onClick={update}>Atualizar</div>
+			<div onClick={update}>Atualizar</div>
 		</>
 	)
 }
