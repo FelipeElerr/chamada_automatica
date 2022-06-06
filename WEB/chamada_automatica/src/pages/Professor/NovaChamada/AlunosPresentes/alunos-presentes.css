@@ -10,7 +10,6 @@
 .historicoChamada{
     margin-top:0.5em;
     margin-left: 2em;
-    
 }
 /* ------------------------------------------------------ */
 .telaListaAlunos {
@@ -52,18 +51,17 @@ li{
     bottom: 13em;
 }
 
-
-
-.Link {
+.link {
+    border-color: #c9eded;
+    box-shadow: none;
     text-decoration: none;
     background-color: #c9eded;
     padding: 5px;
     border-radius: 10px;
-    
 }
 
 /* ------------------------------------------------------ */
-#formatacao{
+.formatacao{
     color: black;
     font-family: 'Indie Flower', cursive;
     font-family: 'Orbitron', sans-serif;

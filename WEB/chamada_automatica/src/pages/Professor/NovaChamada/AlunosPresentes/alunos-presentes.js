@@ -56,13 +56,13 @@ export default function AlunosPresentes() {
 						<Calcular />
 					</button> */}
 
-					<button className="calcular" id="formatacao">
+					<button className="link formatacao calcular">
 						<Update />
 					</button>
 				</section>
 
 				<section className="gerarQrCode">
-					<Link to="/" className="Link" id="formatacao">Finalizar</Link>
+					<Link to="/" className="link formatacao">Finalizar</Link>
 				</section>
 
 			</article>

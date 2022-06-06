@@ -1,3 +1,6 @@
+/*
+Essa função é responsavel por atualizar as checkbox das presenças baseado nas presenças do banco
+*/
 import axios from 'axios'
 import React from 'react'
 import { url } from '../../../api-url.js'

@@ -1,3 +1,7 @@
+/*
+Footer é um componente que cria o rodapé de nosso sistema
+*/
+
 import React from "react"
 import './footer.css'
 

@@ -1,22 +1,21 @@
 .aluno {
     position: absolute;
-    right: 60em;
-    top:15em;
-    
+    right: 60%;
+    top: 30%;
 }
 
 .professor {
     position: absolute;
-    right: 40em;
-    top:15em;
-    
+    right: 30%;
+    top: 30%;
 }
+
 .centro{
     display: flex;
     flex-direction: row;
 }
 
-#formatacao{
+.formatacao{
     color: black;
     font-family: 'Indie Flower', cursive;
     font-family: 'Orbitron', sans-serif;
@@ -25,7 +24,7 @@
     font-size: 1.1em;
 }
 
-.Link {
+.link {
     text-decoration: none;
     background-color: #c9eded;
     padding: 5px;

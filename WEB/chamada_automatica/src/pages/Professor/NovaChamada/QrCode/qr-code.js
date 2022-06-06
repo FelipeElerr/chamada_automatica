@@ -1,3 +1,7 @@
+/*
+Essa pagina possui a capacidade de gerar o QRcode que será interpretado pelo leitor dos alunos
+*/
+
 import { QRCode } from 'react-qrcode-logo';
 import * as React from 'react'
 
