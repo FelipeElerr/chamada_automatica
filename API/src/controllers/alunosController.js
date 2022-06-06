@@ -25,7 +25,7 @@ class AlunoController {
 
 	static presenca = (req, res) => {
 
-		alunos.updateOne({ra:{$eq: req.body.ra}},{presenca:true}, (err) => {
+		alunos.updateOne({ra:{$eq: req.body.ra}},{presenca: req.body.presenca}, (err) => {
 			if(!err) {
 				res.status(200).send({message: 'Presença atualizada'})
 			}
@@ -59,7 +59,6 @@ class AlunoController {
 			}
 		})
 	}
-
 }
 
 export default AlunoController

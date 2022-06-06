@@ -1,18 +1,16 @@
 import { Html5Qrcode } from "html5-qrcode"
 import React from "react";
 import axios from 'axios'
-
-//const url = 'http://localhost:3080'
-const url = 'https://72cc-2804-90-5000-5a4e-1d0-2f5c-bb64-babe.sa.ngrok.io'
+import { url } from '../api-url.js'
 
 function QRCodeReader() {
   function callApi(ra, decodedText){
     axios.put(`${url}/alunos/presenca`,{
       	"ra": ra,
-      	"qrcode": decodedText
+      	"qrcode": decodedText,
+        "presenca": true
       })
     .then((response)=>{
-      //window.alert("foi")
     })
   }
   function testeGET(){
@@ -41,7 +39,8 @@ function QRCodeReader() {
 
     axios.put(`${url}/alunos/presenca`,{
       	"ra": ra,
-      	"qrcode": "decodedText"
+      	"qrcode": "decodedText",
+        "presenca": true
       })
     .then((response)=>{
       console.log(response)
