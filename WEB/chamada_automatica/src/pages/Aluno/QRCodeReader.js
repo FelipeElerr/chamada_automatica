@@ -19,19 +19,6 @@ function QRCodeReader() {
       console.log(response)
     })
   }
-  function testePOST(){
-    let email = document.getElementById("email").value
-    var array = email.split("@")
-    let ra = array[0]
-
-    axios.post(`${url}/alunos/presenca`,{
-      	"ra": ra,
-      	"qrcode": "decodedText"
-      })
-    .then((response)=>{
-      console.log(response)
-    })
-  }
   function testePUT(){
     let email = document.getElementById("email").value
     var array = email.split("@")
@@ -94,7 +81,6 @@ function QRCodeReader() {
     <div style={{width: "500px", border: "white 2px"}} id="reader">
 			<button onClick={scan}>Escanear QRCode</button>
       <button onClick={testeGET}>Testar GET</button>
-      <button onClick={testePOST}>Testar POST</button>
       <button onClick={testePUT}>Testar PUT</button>
 		</div>
   );

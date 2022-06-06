@@ -3,7 +3,6 @@ import Header from "../../../../componentes/Header/header";
 import Footer from "../../../../componentes/Footer/footer";
 import { Link } from "react-router-dom";
 import './alunos-presentes.css';
-//import Calcular from './Calcular';
 import Request from './Request.js';
 import Update from './Update.js';
 
